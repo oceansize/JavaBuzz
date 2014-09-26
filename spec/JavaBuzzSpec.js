@@ -12,6 +12,18 @@ describe("Javabuzz", function() {
       expect(javabuzz.isDivisibleByThree(3)).toBe(true);
     });
 
+    it('not divisible by 3', function(){
+      expect(javabuzz.isDivisibleByThree(1)).toBe(false);
+    });
+
+    it('divisible by 5', function(){
+      expect(javabuzz.isDivisibleByFive(5)).toBe(true);
+    });
+
+    it('not divisible by 5', function(){
+      expect(javabuzz.isDivisibleByFive(1)).toBe(false);
+    });
+
   }); // Close describe
 
 }); // Close describe
